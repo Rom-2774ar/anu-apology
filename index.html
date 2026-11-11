@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry, My Love ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #ffe0e9, #ffb6c9, #ffd6e0);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 25px 12px;
+}
+
+.card {
+    background: rgba(255,255,255,0.88);
+    width: 100%;
+    max-width: 520px;
+    padding: 40px 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(180, 40, 90, 0.2);
+    position: relative;
+    z-index: 2;
+    animation: appear 1.2s ease;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.heart {
+    font-size: 65px;
+    animation: heartbeat 1.3s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+h1 {
+    color: #e63970;
+    font-size: 34px;
+    margin: 18px 0;
+}
+
+h2 {
+    color: #c52d60;
+    margin: 20px 0;
+}
+
+p {
+    color: #66404e;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.divider {
+    color: #e63970;
+    font-size: 25px;
+    margin: 15px;
+}
+
+button {
+    background: linear-gradient(135deg, #ff477e, #d81b60);
+    color: white;
+    border: none;
+    padding: 15px 28px;
+    border-radius: 35px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px #e99aaf;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+}
+
+#surprise {
+    display: none;
+    margin-top: 25px;
+    animation: appear 1s ease;
+}
+
+.signature {
+    margin-top: 30px;
+    color: #d6336c;
+    font-style: italic;
+    font-size: 19px;
+}
+
+.floating-heart {
+    position: fixed;
+    bottom: -30px;
+    color: #ff477e;
+    animation: floatUp 7s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="heart">❤️</div>
+
+    <h1>Babu I'm truly very sorry</h1>
+
+    <h2>Please mujhe ek chance dedo</h2>
+
+    <div class="divider">♡ ♡ ♡</div>
+
+    <p>
+        M kabhi nhi chahta tha ki apka aisa mahsoos karne ki vajah m banu. 😔❤️
+        M behtar karna chahta hu, sirf maafi nahin maangna chahata. 🤍✨
+        main iski bharpai karna chahta...💞
+    </p>
+
+    <p>
+      Maine jo kuch bhi kaha, jo bhi galtiyan ki,
+      aur jab bhi mere words ya kaam se aapko dukh pahuncha,
+      uske liye main sach mein maafi maangata hun.
+      mujhe pata hai ki mujhe aisa kabhi nhi karna chahiye tha,
+      aur situation chahe jo bhi rhi ho,
+      mere bartaav ko kisi bhi tarah sahi nhi btaya ja sakta.
+      aap iske bilkul bhi hakdaar nhi thi. in sabke liye mujhe maaf kar do.
+      m bs sab kuch thik krne ka ek chance chahta hu
+    </p>
+
+    <p>
+      main bus sab kuch theek karne ka ek mauka chahta hun.
+    </p>
+
+    <p>
+        I miss your smile, your laughter,
+        our little conversations, and all
+        the beautiful moments we shared.
+    </p>
+
+    <div class="divider">💗</div>
+
+    <h2>One Last Thing...</h2>
+
+    <p>
+    M maafi ki mang nahin kar sakta aur na hi ye ummeed kr sakta
+    hu ki sab kuch turant normal ho jaye. bss yahi ummeed hai 
+    ki kabhi aap mujhe ek mauka do,
+    taki main aapko dikha sakun ki aap mere liye kitne importance rakhte ho
+    </p>
+
+    <p><b>Babu please mere pass vapis aa jao.</b></p>
+
+    <button onclick="showSurprise()">
+        Open My Heart ❤️
+    </button>
+
+    <div id="surprise">
+        <h2>You're very Special to Me babu</h2>
+        <p>
+            M Apko itna yaad karta hu ki Words mein Explain nhi kr sakta.
+            mujhe Apki presence, Apki Smile, hamari baatcheet or bhi sabhi
+            chhoti-chhoti baatein bhot yaad aati hai jinhone meri zindagi
+            ko khoobsurat bana diya tha. M apni galtiyon ki vajah se aise
+            insaan ko nhi khona chahta jo mere liye itna importance rakhta hai
+        </p>
+        <p>
+            PLease mujhse baat krro babu
+            Mujhe bilkul accha nhi lgg rha h.
+        </p>
+        <div class="heart">💖</div>
+        <h2>I Love You ❤️</h2>
+    </div>
+
+    <div class="signature">
+        With all my love,<br>
+        Apka Shivam ❤️
+    </div>
+
+</div>
+
+<script>
+function showSurprise() {
+    document.getElementById("surprise").style.display = "block";
+    document.getElementById("surprise").scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+    });
+}
+
+// Floating hearts
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "floating-heart";
+    heart.innerHTML = ["❤️", "💕", "💗", "💖"][
+        Math.floor(Math.random() * 4)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+    heart.style.animationDuration = (4 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 9000);
+}
+
+setInterval(createHeart, 500);
+</script>
+
+</body>
+</html>
